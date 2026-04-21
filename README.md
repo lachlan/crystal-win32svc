@@ -45,11 +45,12 @@ end
 Win32::Service.await
 ```
 
-4. Compile `shards build -Dpreview_mt` - to run as a Windows Service
-   necessarily requires at least 2 threads: the main thread which is
-   transformed into the service dispatcher, and another thread to run
+4. Compile `shards build -Dpreview_mt -Dexecution_context` - to run as a
+   Windows Service necessarily requires at least 2 threads: the main thread
+   which is transformed into the service dispatcher, and another thread to run
    the service itself. For this to work, it requires compiling using
-   the `preview_mt` flag to enable multithreading in Crystal.
+   the `preview_mt` flag to enable multithreading in Crystal, and the
+   `execution_context` flag to enable the new execution context feature.
 
 5. Create Windows service
 

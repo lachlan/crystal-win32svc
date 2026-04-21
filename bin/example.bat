@@ -6,7 +6,7 @@ SET service_path=%~dp0
 SET service_exe=%service_path%example.exe
 SET service_name=crystal-win32svc-example
 SET service_display_name=Crystal Windows Service Example
-SET service_description=Provides an example Windows service written in Crystal lang
+SET service_description=Provides an example Windows service written in the Crystal language
 SET service_start=demand
 SET action=%1
 

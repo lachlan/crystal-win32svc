@@ -1,5 +1,5 @@
 name: win32svc
-version: 0.1.0
+version: 0.2.0
 
 authors:
   - Lachlan Dowding <lachlan@permafrost.space>
@@ -9,9 +9,8 @@ targets:
     main: src/example.cr
 
 dependencies:
-  win32cr:
-    github: mjblack/win32cr
-    version: "~>0.3"
+  simplog:
+    github: lachlan/crystal-simplog
 
 crystal: '>= 1.11.0'
 
